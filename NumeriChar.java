@@ -5,13 +5,12 @@ public class NumericChar{
     int num=0;
     Scanner s=new Scanner(System.in);
     System.out.print("Enter The Strings Of : ");
-		String str=s.nextLine();
-		int digits=0;
-		for(int i=0;i<str.length();i++){
-		if(Character.isDigit(str.charAt(i))){
-        num++;
-		}
-		}
-		System.out.println("The Numeric Characters Of :"+num);
-	}
+    String str=s.nextLine();
+    for(int i=0;i<str.length();i++){
+    if(Character.isDigit(str.charAt(i))){
+        num++;	
+    }
+    }	
+    System.out.println("The Numeric Characters Of :"+num);
+    }
 }
